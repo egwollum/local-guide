@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Local Guide | Dining</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <title>Food & Dining | Arlington Local Guide</title>
 </head>
 
-<header>
-  Food & Dining
+<body>
+  <!-- Skip to Main Content Link - First focusable element, lets screen reader users jump past navigation -->
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+  <header>
+    Arlington Visitor Guide
+  </header>
+
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -16,10 +28,47 @@
       <li><a href="transit.html">Public Transit</a></li>
     </ul>
   </nav>
-</header>
 
-<body>
+  <main id="#main-content">
+    <section>
+      <h1>Food & Dining</h1>
+      <p>Arlington has limitless options when it comes to cuisine. Here are standout spots organized by area.</p>
+    </section>
 
+    <section>
+      <h2>Dining by Neighborhood</h2>
+      <!-- Flexbox: Card Grid -->
+      <div class="card-grid">
+        <div class="card">
+          <h3>Ballston</h3>
+          <p>Dense restaurant corridors including Vietnamese, Italian, Peruvian, and more within a short walk of the Metro.</p>
+        </div>
+        <div class="card">
+          <h3>Virginia Square</h3>
+          <p>Home to the Quarter Market food hall and a mix of casual and upscale dining.</p>
+        </div>
+      </div>
+
+      <div>
+        <h2>Suggested Restaurants</h2>
+          <ul>
+            <li><a href="https://rocklands.com/">Rocklands Barbeque & Grilling Company</a> - Barbeque - $$</li>
+            <li><a href="https://www.eatbigbuns.com/ballston">Big Buns Ballston</a> - American Burgers - $$</li>
+            <li><a href="https://elpollorico.com/locations/arlington/">El Pollo Rico</a> - Peruvian - $$</li>
+          </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Getting There</h2>
+      <p>Most of these restaurants are within walking distance of a Metro station.
+        See our <a href="transit.html">Getting Around</a> page for station details.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>An area guide by visually impaired tourists, for visually impaired tourists</p>
+    <p>This page was created for a project at Wake Technical Community College</p>
+  </footer>
 </body>
-
 </html>

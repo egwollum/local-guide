@@ -3,11 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Local Guide | Arlington, VA</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <title>Home | Arlington Local Guide</title>
 </head>
 
-<header>
-  Welcome to DC
+<body>
+  <!-- Skip to Main Content Link - First focusable element, lets screen reader users jump past navigation -->
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+  <header>
+    Arlington Visitor Guide
+  </header>
+
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -15,9 +28,53 @@
       <li><a href="transit.html">Public Transit</a></li>
     </ul>
   </nav>
-</header>
 
-<body>
-  
+  <main id="#main-content" tabindex="-1">
+    <section>
+      <h1>Welcome to Arlington!</h1>
+      <p>Arlington sits just across the Potomac River from Washington, D.C., and is one of the densest, most walkable cities in the country. Over the course of a week you can see a military cemetery, a national memorial, a riverside island, and some of the best food in the region. This guide is designed to help you plan  your visit, without worrying about accessibility problem.</p>
+    </section>
+
+    <section>
+      <h2>Top Tourist Spots</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3><a href="#">The Smithsonian</a></h3>
+          <p>The Smithsonian Institution is a collection of 19 museums and the National
+          Zoo, all free to enter. Located just across the Potomac in Washington, D.C., many are reachable by Metro from Arlington in under 20 minutes.</p>
+        </div>
+
+        <div class="card">
+          <h3><a href="#">National 9/11 Pentagon Memorial</a></h3>
+          <p>184 illuminated benches honoring the victims of 9/11. Open 24 hours.</p>
+        </div>
+
+        <div class="card">
+          <h3><a href="#">Arlington National Cemetery</a></h3>
+          <p>639-acre military cemetery holding 400,000+ veterans, the Tomb of the
+        Unknown Soldier, and the graves of Presidents Kennedy and Taft. Free.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Plan Your Visit</h2>
+      <p>Arlington is compact and walkable, but knowing where to eat and how to get around makes a big difference. Use these guides to build out your daily plan:</p>
+      <ul>
+        <li><a href="dining.html">Food & Dining</a> - where to eat in Ballston, Virginia Square, and beyond</li>
+        <li><a href="transit.html">Public Transit</a> - Metro lines, key stations, and tips for accessible travel.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Why Arlington?</h2>
+      <p>You're a short ride from D.C.'s museums and monuments, but Arlington itself has plenty to fill your visit: Arlington Cemetery, the Pentagon Memorial, T. Roosevelt Island, and neighborhoods with their own character. The Metro means you can leave your car at the hotel, and most of the restaurants we recommend are within a few blocks of a station.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>An area guide by visually impaired tourists, for visually impaired tourists</p>
+    <p>This page was created for a project at Wake Technical Community College</p>
+  </footer>
 </body>
 </html>
