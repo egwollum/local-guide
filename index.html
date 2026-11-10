@@ -16,7 +16,7 @@
 
 <body>
   <!-- Skip to Main Content Link - First focusable element, lets screen reader users jump past navigation -->
-  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+  <a class="skip-link" href="#main-content" >Skip to Main Content</a>
   <header>
     Arlington Visitor Guide
   </header>
@@ -29,30 +29,38 @@
     </ul>
   </nav>
 
-  <main id="#main-content" tabindex="-1">
+  <div class="hero-container">
+    <img class="hero-background" src="images/arlington landscape.jpg" alt="">
+    <div class="hero-text">
+      <h1 id="main-content" tabindex="-1">Welcome to Arlington</h1>
+      <p>An area guide by visually impaired tourists, for visually impaired tourists</p>
+    </div>
+  </div>
+
+  <main>
     <section>
-      <h1>Welcome to Arlington!</h1>
-      <p>Arlington sits just across the Potomac River from Washington, D.C., and is one of the densest, most walkable cities in the country. Over the course of a week you can see a military cemetery, a national memorial, a riverside island, and some of the best food in the region. This guide is designed to help you plan  your visit, without worrying about accessibility problem.</p>
+      <p>Arlington sits just across the Potomac River from Washington, D.C., and is one of the densest, most walkable cities in the country. Over the course of a week you can see a military cemetery, a national memorial, a riverside island, and some of the best food in the region. This guide is designed to help you plan  your visit, without worrying about accessibility problems.</p>
     </section>
 
     <section>
       <h2>Top Tourist Spots</h2>
       <div class="card-grid">
         <div class="card">
-          <h3><a href="#">The Smithsonian</a></h3>
-          <p>The Smithsonian Institution is a collection of 19 museums and the National
-          Zoo, all free to enter. Located just across the Potomac in Washington, D.C., many are reachable by Metro from Arlington in under 20 minutes.</p>
+          <img src="images/smithsonian.jpg" alt="">
+          <h3><a href="https://www.si.edu/" target="_blank">The Smithsonian</a></h3>
+          <p>The Smithsonian Institution is a collection of 19 museums and the National Zoo, all free to enter. Located just across the Potomac in Washington, D.C., many are reachable by Metro from Arlington in under 20 minutes.</p>
         </div>
 
         <div class="card">
-          <h3><a href="#">National 9/11 Pentagon Memorial</a></h3>
+          <img src="images/pentagon memorial.jpg" alt="">
+          <h3><a href="https://pentagonmemorial.org/" target="_blank">National 9/11 Pentagon Memorial</a></h3>
           <p>184 illuminated benches honoring the victims of 9/11. Open 24 hours.</p>
         </div>
 
         <div class="card">
-          <h3><a href="#">Arlington National Cemetery</a></h3>
-          <p>639-acre military cemetery holding 400,000+ veterans, the Tomb of the
-        Unknown Soldier, and the graves of Presidents Kennedy and Taft. Free.</p>
+          <img src="images/arlington cemetery.jpg" alt="">
+          <h3><a href="https://www.arlingtoncemetery.mil/" target="_blank">Arlington National Cemetery</a></h3>
+          <p>639-acre military cemetery holding 400,000+ veterans, the Tomb of the Unknown Soldier, and the graves of Presidents Kennedy and Taft. Free.</p>
         </div>
       </div>
     </section>
@@ -73,7 +81,6 @@
   </main>
 
   <footer>
-    <p>An area guide by visually impaired tourists, for visually impaired tourists</p>
     <p>This page was created for a project at Wake Technical Community College</p>
   </footer>
 </body>
