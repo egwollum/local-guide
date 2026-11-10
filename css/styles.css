@@ -1,0 +1,193 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  color: #000;
+  background-color: #f0f7ff;
+  line-height: 1.6;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  background: #f0f7ff;
+  color: #003d80;
+  padding: 10px 16px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Header */
+header {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #0056b3;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  position: sticky;
+  background-color: #003d80;
+  padding: 0.5rem 2rem;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+
+  /* Not sure if nesting like this is ideal but it's one solution to the problem of separating which lists I want changed (everything but nav) */
+  li {
+    list-style: none;
+    margin: 0.5rem;
+  }
+}
+
+h2 {
+  color: #0056b3;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+}
+
+dl {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dl-row {
+  display: flex;
+}
+
+dt {
+  flex: 0 0 250px;
+  font-weight: bold;
+}
+
+dd {
+  flex: 1;
+  margin: 0;
+}
+
+/* Home Page Hero Heading */
+.hero-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.hero-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  filter: brightness(60%);
+}
+
+.hero-text {
+  color: white;
+  position: absolute;
+  width: 80%;
+  height: 60%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  h1 {font-size: 3rem;}
+  p {font-size: 1.5rem;}
+}
+
+/* Cards / Flexbox */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card {
+  flex: 1 1 250px;
+  background-color: #fff;
+  border: 1px solid #c5ddf5;
+  border-radius: 8px;
+  overflow: hidden;
+  h3 {padding: 0 16px;}
+  p {padding: 0 16px 16px;}
+}
+
+/* METRO navigation, subway and bus */
+.metro-navigation ul {
+  margin-bottom: 2rem;
+  li {
+    list-style: disc;
+    margin-left: 1rem;
+  }
+}
+
+/* Links */
+a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #0056b3;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
