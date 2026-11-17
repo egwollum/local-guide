@@ -15,7 +15,6 @@
 </head>
 
 <body>
-  <!-- Skip to Main Content Link - First focusable element, lets screen reader users jump past navigation -->
   <a href="#main-content" class="skip-link">Skip to Main Content</a>
   <header>
     Arlington Visitor Guide
@@ -29,11 +28,21 @@
     </ul>
   </nav>
 
-  <main id="main-content">
+  <div class="hero-container">
+    <img class="hero-background" src="images/streetview.jpg" alt="">
+    <div class="hero-text">
+      <h1 id="main-content" tabindex="-1">Food & Dining</h1>
+      <p>The best cuisine in Arlington.</p>
+    </div>
+  </div>
+
+  <main>
     <section>
-      <h1>Food & Dining</h1>
-      <p>Arlington has limitless options when it comes to cuisine. Here are standout spots organized by area.</p>
+      <p>The Ballston and Virginia Square neighborhoods are among the most walkable dining scenes in the D.C. area, with everything from wood-fired barbecue to charcoal-broiled Peruvian chicken a short stroll from the Metro. This guide
+      rounds up the spots worth the trip!</p>
     </section>
+
+
 
     <section>
       <h2>Suggested Restaurants</h2>
@@ -43,7 +52,8 @@
           <h3><a href="https://rocklands.com/" target="_blank">Rocklands Barbeque & Grilling Company</a></h3>
           <p>Barbeque · $$</p>
           <p><strong>Ballston</strong> — 5 min walk from Ballston Metro</p>
-          <p><a href="https://maps.google.com/?q=Rocklands+Ballston" target="_blank">Get Directions →</a></p>
+          <p>Famous for its wood-smoked baby-back ribs and the Rocklands Pearl — mac and cheese, baked beans, and chopped pork piled high in a bowl.</p>
+          <p><a href="https://maps.google.com/?q=Rocklands+Ballston" target="_blank">Directions to Rocklands Barbeque →</a></p>
         </div>
     
         <div class="card">
@@ -51,7 +61,8 @@
           <h3><a href="https://www.eatbigbuns.com/ballston" target="_blank">Big Buns Ballston</a></h3>
           <p>American Burgers · $$</p>
           <p><strong>Ballston</strong> — 3 min walk from Ballston Metro</p>
-          <p><a href="https://maps.google.com/?q=Big+Buns+Ballston" target="_blank">Get Directions →</a></p>
+          <p>Known for its wood-smoked baby-back ribs and the Rocklands Pearl — mac and cheese, baked beans, and chopped pork piled high in a bowl.</p>
+          <p><a href="https://maps.google.com/?q=Big+Buns+Ballston" target="_blank">Directions to Big Buns Ballston →</a></p>
         </div>
     
         <div class="card">
@@ -59,20 +70,83 @@
           <h3><a href="https://elpollorico.com/locations/arlington/" target="_blank">El Pollo Rico</a></h3>
           <p>Peruvian · $$</p>
           <p><strong>Virginia Square</strong> — 8 min walk from Virginia Square Metro</p>
-          <p><a href="https://maps.google.com/?q=El+Pollo+Rico+Arlington" target="_blank">Get Directions →</a></p>
+          <p>Named to the <em>40 Essential Dishes</em> of D.C. by the Washington Post. Famous for its charcoal-broiled Peruvian chicken and fiery green chile dipping sauce.</p>
+          <p><a href="https://maps.google.com/?q=El+Pollo+Rico+Arlington" target="_blank">Directions to El Pollo Rico →</a></p>
+        </div>
+
+        <div class="card">
+          <img src="images/carbonara.jpg" alt="" class="card-img">
+          <h3><a href="https://www.carbonara.com/" target="_blank">Carbonara</a></h3>
+          <p>Italian · $$$</p>
+          <p><strong>Virginia Square</strong> — 6 min walk from Virginia Square Metro</p>
+          <p>Named <em>Best Italian</em> in NoVA 2025. Famous for its flaming Parmesan-wheel carbonara and vodka sauce chicken parm.</p>
+          <p><a href="https://maps.google.com/?q=Carbonara+Arlington" target="_blank">Directions to Carbonara →</a></p>
         </div>
       </div>
     </section>
 
     <section>
-      <h2>Dining by Neighborhood</h2>
-      <p>Each of these areas has its own vibe and is a short walk from a Metro station:</p>
+      <h2>Quarter Market, Ballston's Food Hall</h2>
+      <p>Spanning <strong>25,000 square feet</strong> inside Ballston Quarter,
+        Quarter Market is Arlington's largest food hall. Opened in 2019, it brings
+        together a dozen+ locally-owned concepts under one indoor/outdoor roof,
+        centered around a public plaza with communal seating.</p>
+      <p>Highlights include:</p>
       <ul>
-        <li><strong>Ballston</strong> | Dense restaurant corridors with Vietnamese, Italian, Peruvian, and more.</li>
-        <li><strong>Virginia Square</strong> | Home to the Quarter Market food hall, mixing casual and upscale.</li>
-        <li><strong>Pentagon City</strong> | Mall dining plus a few local gems.</li>
-        <li><strong>Clarendon</strong> | High-energy strip along Wilson Blvd with late-night options.</li>
-        <li><strong>Crossroads</strong> | Up-and-coming corridor known for breweries and food trucks.</li>
+        <li><strong>Hot Lola's</strong> - Spicy fried chicken sandwiches and tenders</li>
+        <li><strong>Sloppy Mama's BBQ</strong> - Brisket, pulled pork, and Texas-style classics</li>
+        <li><strong>Maizal</strong> - Latin street food and tacos</li>
+        <li><strong>Ice Cream Jubilee</strong> - Award-winning small-batch ice cream</li>
+        <li><strong>Turu's by Timber</strong> - Wood-fired artisan pizza</li>
+        <li><strong>Bollywood Bistro</strong> - Fast-casual Indian dishes</li>
+        <li><strong>Jinya Ramen Bar</strong> - Non-traditional ramen and steamed buns</li>
+        <li><strong>The Local Oyster</strong> - Fresh Maryland crab and oysters</li>
+      </ul>
+      <p>Perfect for groups: everyone can pick a different vendor and eat together
+        at shared tables. <a href="https://maps.google.com/?q=Quarter+Market+Ballston" target="_blank">Quarter Market Directions →</a></p>
+    </section>
+
+    <section>
+      <h2>Dining by Neighborhood</h2>
+      <p>Each of these areas has its own character and is a short walk from a Metro station:</p>
+      <ul>
+        <li>
+          <strong>Ballston</strong> - The densest restaurant corridor in Arlington.
+          Vietnamese, Italian, Peruvian, Japanese BBQ, and more within a few blocks.
+          Quarter Market adds a food-hall option right at the Metro entrance.
+        </li>
+        <li>
+          <strong>Virginia Square</strong> - Home to Carbonara, El Pollo Rico,
+          and a growing mix of casual and upscale spots. Slightly less crowded
+          than Ballston but just as walkable.
+        </li>
+        <li>
+          <strong>Clarendon</strong> - Arlington's original "downtown." High-energy
+          strip along Wilson Blvd with late-night options, pubs, and fine dining.
+          Four Sisters Grill (Vietnamese) and Tiger Dumplings are local standouts.
+        </li>
+        <li>
+          <strong>Pentagon City</strong> - The Fashion Centre mall anchors the area,
+          with a mix of chain and local restaurants. Convenient for airport travelers.
+        </li>
+        <li>
+          <strong>Crossroads</strong> - Up-and-coming corridor known for breweries,
+          food trucks, and a younger, creative crowd.
+        </li>
+        <li>
+          <strong>Courthouse</strong> - A quieter, village-like neighborhood with
+          gems like Sawatdee Thai, Tika Masala Street Food, and Mejana.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Budget Tips</h2>
+      <ul>
+        <li><strong>$ (under $15):</strong> Quarter Market vendors, El Pollo Rico, Hawkers, food trucks at Crossroads
+        </li>
+        <li><strong>$$ ($15–$30):</strong> Rocklands, Big Buns, Four Sisters Grill, Gyu San Japanese BBQ</li>
+        <li><strong>$$$ ($30+):</strong> Carbonara, AMBAR, The Commentary, Tiger Dumplings</li>
       </ul>
     </section>
 
@@ -84,7 +158,6 @@
   </main>
 
   <footer>
-    <p>An area guide by visually impaired tourists, for visually impaired tourists</p>
     <p>This page was created for a project at Wake Technical Community College</p>
   </footer>
 </body>
